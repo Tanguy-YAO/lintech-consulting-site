@@ -1,69 +1,135 @@
-import Image from "next/image";
+import Link from "next/link";
+import { formations, poles } from "@/lib/formations";
+import CourseCard from "@/components/CourseCard";
 
 export default function Home() {
+  const featured = formations.filter((f) =>
+    ["data-engineering-analytics-engineering", "power-bi-fondamentaux", "data-analytics-sql-python"].includes(
+      f.slug
+    )
+  );
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <div>
+      {/* Hero */}
+      <section className="bg-navy text-white">
+        <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+          <span className="inline-block rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white/90">
+            Formations Data · BI · Analytics
+          </span>
+          <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-tight md:text-5xl">
+            Transformez vos données en décisions, avec un expert BI &amp; Data
+            Engineering.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-6 max-w-xl text-lg text-white/80">
+            LinTech Consulting forme particuliers et entreprises en Power BI,
+            Excel, Google Sheets, Data Analytics et Data Engineering &amp;
+            Analytics Engineering — en Côte d&apos;Ivoire et en Afrique de
+            l&apos;Ouest.
           </p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link
+              href="/formations"
+              className="rounded-full bg-red px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-red-dark"
+            >
+              Voir les formations
+            </Link>
+            <Link
+              href="/entreprises"
+              className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+            >
+              Formations en entreprise
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Value proposition */}
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="grid gap-8 md:grid-cols-3">
+          <div>
+            <h3 className="text-lg font-semibold text-navy">
+              Un expert, pas un généraliste
+            </h3>
+            <p className="mt-2 text-sm text-foreground/70">
+              Formateur BI Manager en activité, avec une spécialisation rare en
+              Data Engineering &amp; Analytics Engineering — au-delà des
+              tableaux de bord.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-navy">
+              Pensé pour l&apos;Afrique de l&apos;Ouest
+            </h3>
+            <p className="mt-2 text-sm text-foreground/70">
+              Des formations en présentiel à Abidjan ou à distance, adaptées
+              aux réalités et outils utilisés par les entreprises locales.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-navy">
+              Particuliers &amp; entreprises
+            </h3>
+            <p className="mt-2 text-sm text-foreground/70">
+              Un parcours pour monter en compétences individuellement, et des
+              formations sur-mesure pour les équipes.
+            </p>
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Pôles de formation */}
+      <section className="bg-black/[.02] py-16">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-2xl font-bold text-navy">Nos pôles de formation</h2>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {poles.map((p) => (
+              <Link
+                key={p.id}
+                href={`/formations#${p.id}`}
+                className="rounded-2xl border border-black/10 bg-white p-6 transition-shadow hover:shadow-md"
+              >
+                <h3 className="font-semibold text-navy">{p.nom}</h3>
+                <p className="mt-2 text-sm text-foreground/70">{p.description}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured courses */}
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="flex items-center justify-between">
+          <h2 className="text-2xl font-bold text-navy">Formations populaires</h2>
+          <Link href="/formations" className="text-sm font-semibold text-red hover:underline">
+            Tout le catalogue →
+          </Link>
+        </div>
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          {featured.map((f) => (
+            <CourseCard key={f.slug} formation={f} />
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="rounded-3xl bg-red px-8 py-12 text-center text-white md:px-16">
+          <h2 className="text-2xl font-bold md:text-3xl">
+            Une question, un projet de formation ?
+          </h2>
+          <p className="mx-auto mt-3 max-w-xl text-white/90">
+            Discutons de vos objectifs et du format le plus adapté — individuel
+            ou pour toute votre équipe.
+          </p>
+          <Link
+            href="/contact"
+            className="mt-6 inline-block rounded-full bg-white px-6 py-3 text-sm font-semibold text-red transition-colors hover:bg-white/90"
+          >
+            Nous contacter
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
