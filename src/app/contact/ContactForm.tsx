@@ -93,6 +93,7 @@ export default function ContactForm() {
               </option>
             ))}
             <option value="formation-entreprise">Formation sur-mesure entreprise</option>
+            <option value="conseil-bi">Conseil & Infrastructure BI</option>
           </select>
         </div>
       </div>

@@ -91,6 +91,25 @@ export default async function FormationDetailPage({
 
           <h2 className="mt-10 text-xl font-bold text-navy">Prérequis</h2>
           <p className="mt-4 text-sm text-foreground/80">{formation.prerequis}</p>
+
+          {formation.pole === "data-engineering" && (
+            <div className="mt-10 rounded-2xl bg-black/[.03] p-6 text-sm text-foreground/70">
+              <p className="font-medium text-foreground">
+                Vous voulez aller plus loin, jusqu&apos;à une infrastructure
+                en production ?
+              </p>
+              <p className="mt-1">
+                Cette formation pose les fondamentaux. Pour la mise en place
+                complète d&apos;une infrastructure BI dans votre entreprise
+                (ingestion, data lake, stockage, hébergement, restitution),
+                découvrez notre{" "}
+                <Link href="/conseil-bi" className="font-medium text-navy underline">
+                  service de Conseil &amp; Infrastructure BI
+                </Link>
+                .
+              </p>
+            </div>
+          )}
         </div>
 
         <aside className="h-fit rounded-2xl border border-black/10 bg-white p-6 shadow-sm md:sticky md:top-24">

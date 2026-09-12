@@ -47,6 +47,11 @@ export default function Footer() {
           </h3>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
+              <Link href="/conseil-bi" className="text-white/80 hover:text-white">
+                Conseil & Infrastructure BI
+              </Link>
+            </li>
+            <li>
               <Link href="/entreprises" className="text-white/80 hover:text-white">
                 Entreprises
               </Link>

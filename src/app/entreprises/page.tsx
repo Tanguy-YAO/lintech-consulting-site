@@ -89,6 +89,22 @@ export default function EntreprisesPage() {
           </ul>
         </div>
       </section>
+
+      <section className="mx-auto max-w-5xl px-6 py-16">
+        <div className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm md:p-8">
+          <p className="font-medium text-navy">
+            Vos équipes ont surtout besoin d&apos;un socle de données fiable,
+            pas seulement d&apos;une formation ?
+          </p>
+          <p className="mt-2 text-sm text-foreground/70">
+            Découvrez notre service de{" "}
+            <Link href="/conseil-bi" className="font-medium text-navy underline">
+              Conseil &amp; Infrastructure BI
+            </Link>
+            , pour la mise en place complète de votre chaîne de données.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

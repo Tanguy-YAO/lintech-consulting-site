@@ -4,7 +4,7 @@ import CourseCard from "@/components/CourseCard";
 
 export default function Home() {
   const featured = formations.filter((f) =>
-    ["data-engineering-analytics-engineering", "power-bi-fondamentaux", "data-analytics-sql-python"].includes(
+    ["data-engineering-analytics-engineering", "power-bi-fondamentaux", "appsheet-applications-metier"].includes(
       f.slug
     )
   );
@@ -109,6 +109,33 @@ export default function Home() {
           {featured.map((f) => (
             <CourseCard key={f.slug} formation={f} />
           ))}
+        </div>
+      </section>
+
+      {/* Conseil BI teaser */}
+      <section className="mx-auto max-w-6xl px-6 pb-16">
+        <div className="grid gap-8 rounded-3xl border border-black/10 bg-white p-8 shadow-sm md:grid-cols-3 md:p-10">
+          <div className="md:col-span-2">
+            <span className="text-xs font-semibold uppercase tracking-wide text-red">
+              Pour les entreprises
+            </span>
+            <h2 className="mt-2 text-2xl font-bold text-navy">
+              Besoin d&apos;une vraie infrastructure BI, pas seulement d&apos;une formation ?
+            </h2>
+            <p className="mt-3 text-sm text-foreground/70">
+              LinTech Consulting met en place votre infrastructure de bout en
+              bout : ingestion des données, data lake, stockage, hébergement
+              et tableaux de bord.
+            </p>
+          </div>
+          <div className="flex items-center md:justify-end">
+            <Link
+              href="/conseil-bi"
+              className="inline-block rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-dark"
+            >
+              Découvrir le service
+            </Link>
+          </div>
         </div>
       </section>
 
