@@ -49,12 +49,12 @@ export default function Home() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <h3 className="text-lg font-semibold text-navy">
-              Un expert, pas un généraliste
+              Des experts, pas des généralistes
             </h3>
             <p className="mt-2 text-sm text-foreground/70">
-              Formateur BI Manager en activité, avec une spécialisation rare en
-              Data Engineering &amp; Analytics Engineering — au-delà des
-              tableaux de bord.
+              Un réseau de formateurs professionnels, sélectionnés et
+              encadrés par un BI Manager en activité, avec une spécialisation
+              rare en Data Engineering &amp; Analytics Engineering.
             </p>
           </div>
           <div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "À propos — LinTech Consulting",
   description:
-    "LinTech Consulting, formations en Data, BI et Analytics animées par un BI Manager spécialisé en Data Engineering & Analytics Engineering.",
+    "LinTech Consulting, cabinet de formation en Data, BI et Analytics, dirigé par Tanguy Boris Romuald YAO et son réseau de formateurs professionnels.",
 };
 
 export default function AProposPage() {
@@ -20,28 +20,44 @@ export default function AProposPage() {
           Engineering &amp; Analytics Engineering.
         </p>
         <p>
-          Les formations sont animées par un <strong>formateur autodidacte</strong>,
-          entré dans la data par passion plutôt que par un parcours
-          académique classique — et c&apos;est cette même approche pratique,
-          orientée résultats, qui structure chaque formation LinTech
-          Consulting.
+          Chaque formation est animée par un <strong>formateur professionnel
+          sélectionné pour son expertise</strong> sur le sujet concerné,
+          garantissant un contenu à jour et directement applicable — quelle
+          que soit la thématique.
         </p>
-        <p>
-          Il occupe aujourd&apos;hui un poste de <strong>BI Manager au sein
-          d&apos;un grand groupe international de l&apos;énergie</strong>, où
-          il pilote la BI/Data de plusieurs entités en Côte d&apos;Ivoire,
-          avec une spécialisation en Data Engineering et Analytics
-          Engineering — la construction de pipelines de données fiables et de
-          modèles analytiques prêts pour la décision, au-delà des simples
-          tableaux de bord.
-        </p>
-        <p>
-          De nombreux professionnels le sollicitent déjà de manière
-          informelle pour de l&apos;accompagnement en Excel, Power BI et
-          Data. Ce site formalise cette expertise en un catalogue de
-          formations structuré, pour les particuliers comme pour les
-          entreprises.
-        </p>
+      </div>
+
+      <div className="mt-12 rounded-2xl border border-black/10 bg-white p-6 shadow-sm md:p-8">
+        <span className="text-xs font-semibold uppercase tracking-wide text-red">
+          Fondateur &amp; Gérant
+        </span>
+        <h2 className="mt-2 text-xl font-bold text-navy">
+          Tanguy Boris Romuald YAO
+        </h2>
+        <div className="mt-4 space-y-4 text-sm text-foreground/80">
+          <p>
+            Arrivé à la donnée par un chemin peu classique — après un parcours
+            initial en linguistique, puis plusieurs années à diriger des
+            opérations terrain et service client à l&apos;échelle nationale
+            pour une entreprise panafricaine — Tanguy s&apos;est formé en
+            autodidacte à la Business Intelligence, par passion.
+          </p>
+          <p>
+            Il occupe aujourd&apos;hui un poste de <strong>BI Manager au sein
+            d&apos;un grand groupe international de l&apos;énergie</strong> en
+            Côte d&apos;Ivoire, où il a également développé une expertise en{" "}
+            <strong>Data Engineering et Analytics Engineering</strong> —
+            au-delà des tableaux de bord, la construction de pipelines de
+            données fiables et de modèles analytiques prêts pour la décision.
+            Il est par ailleurs titulaire d&apos;un MBA.
+          </p>
+          <p>
+            En tant que gérant de LinTech Consulting, il sélectionne et
+            encadre le réseau de formateurs professionnels du cabinet, et
+            veille personnellement à la qualité pédagogique de chaque
+            formation.
+          </p>
+        </div>
       </div>
 
       <div className="mt-10 rounded-2xl bg-navy p-6 text-center text-white">

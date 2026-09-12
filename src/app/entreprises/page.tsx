@@ -72,8 +72,9 @@ export default function EntreprisesPage() {
           <ul className="mt-6 space-y-3 text-sm text-foreground/80">
             <li className="flex gap-2">
               <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-red" />
-              Un formateur BI Manager en activité, qui connaît les enjeux
-              réels des équipes data en entreprise.
+              Un réseau de formateurs professionnels, encadré par un BI
+              Manager en activité qui connaît les enjeux réels des équipes
+              data en entreprise.
             </li>
             <li className="flex gap-2">
               <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-red" />

@@ -16,8 +16,9 @@ export default function FormationsPage() {
           Catalogue de formations
         </h1>
         <p className="mt-4 text-foreground/70">
-          Des formations pratiques en Data, BI et Analytics, animées par un BI
-          Manager en activité. Formats individuels ou pour votre équipe.
+          Des formations pratiques en Data, BI et Analytics, animées par un
+          réseau de formateurs professionnels. Formats individuels ou pour
+          votre équipe.
         </p>
       </div>
 
