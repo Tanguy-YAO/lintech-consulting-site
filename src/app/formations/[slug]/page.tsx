@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { formations, getFormationBySlug } from "@/lib/formations";
+import { formations, formatFCFA, getFormationBySlug } from "@/lib/formations";
 
 export function generateStaticParams() {
   return formations.map((f) => ({ slug: f.slug }));
@@ -95,11 +95,21 @@ export default async function FormationDetailPage({
 
         <aside className="h-fit rounded-2xl border border-black/10 bg-white p-6 shadow-sm md:sticky md:top-24">
           <p className="text-xs font-semibold uppercase tracking-wide text-foreground/50">
-            Tarif
+            Tarif individuel
           </p>
-          <p className="mt-1 text-lg font-semibold text-navy">Sur devis</p>
+          <p className="mt-1 text-lg font-semibold text-navy">
+            {formatFCFA(formation.tarifIndividuel)}
+          </p>
+
+          <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-foreground/50">
+            Tarif groupe / entreprise
+          </p>
+          <p className="mt-1 text-lg font-semibold text-navy">
+            {formatFCFA(formation.tarifGroupe)}
+          </p>
           <p className="mt-1 text-xs text-foreground/60">
-            Tarif individuel ou groupe communiqué sur demande.
+            Forfait pour un groupe (jusqu&apos;à ~10 personnes). Devis
+            personnalisé au-delà.
           </p>
 
           <Link

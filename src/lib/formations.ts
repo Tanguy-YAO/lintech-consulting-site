@@ -10,7 +10,16 @@ export type Formation = {
   objectifs: string[];
   programme: { titre: string; points: string[] }[];
   prerequis: string;
+  tarifIndividuel: number;
+  tarifGroupe: number;
 };
+
+export function formatFCFA(montant: number) {
+  const avecEspaces = Math.round(montant)
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  return `${avecEspaces} FCFA`;
+}
 
 export const poles = [
   {
@@ -103,6 +112,8 @@ export const formations: Formation[] = [
     ],
     prerequis:
       "Bases en SQL requises. Une première expérience en manipulation de données (Excel, Power BI ou autre) est un plus.",
+    tarifIndividuel: 500000,
+    tarifGroupe: 3800000,
   },
   {
     slug: "power-bi-fondamentaux",
@@ -159,6 +170,8 @@ export const formations: Formation[] = [
       },
     ],
     prerequis: "Aucun prérequis technique. Une aisance avec Excel est un plus.",
+    tarifIndividuel: 200000,
+    tarifGroupe: 1400000,
   },
   {
     slug: "power-bi-avance-dax",
@@ -206,6 +219,8 @@ export const formations: Formation[] = [
       },
     ],
     prerequis: "Avoir suivi la formation Power BI Fondamentaux ou équivalent.",
+    tarifIndividuel: 230000,
+    tarifGroupe: 1600000,
   },
   {
     slug: "excel-professionnel",
@@ -252,6 +267,8 @@ export const formations: Formation[] = [
       },
     ],
     prerequis: "Utilisation basique d'Excel (saisie, formules simples).",
+    tarifIndividuel: 90000,
+    tarifGroupe: 900000,
   },
   {
     slug: "excel-macros-vba",
@@ -295,6 +312,8 @@ export const formations: Formation[] = [
       },
     ],
     prerequis: "Bonne maîtrise d'Excel recommandée.",
+    tarifIndividuel: 100000,
+    tarifGroupe: 950000,
   },
   {
     slug: "google-sheets-avance",
@@ -339,6 +358,8 @@ export const formations: Formation[] = [
       },
     ],
     prerequis: "Bonne connaissance de Google Sheets recommandée.",
+    tarifIndividuel: 75000,
+    tarifGroupe: 700000,
   },
   {
     slug: "data-analytics-sql-python",
@@ -385,6 +406,8 @@ export const formations: Formation[] = [
       },
     ],
     prerequis: "Aucun prérequis technique préalable.",
+    tarifIndividuel: 400000,
+    tarifGroupe: 2800000,
   },
 ];
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Formation } from "@/lib/formations";
+import { formatFCFA, type Formation } from "@/lib/formations";
 
 export default function CourseCard({ formation }: { formation: Formation }) {
   return (
@@ -16,10 +16,13 @@ export default function CourseCard({ formation }: { formation: Formation }) {
       <p className="mt-2 flex-1 text-sm text-foreground/70">{formation.accroche}</p>
       <div className="mt-4 flex items-center justify-between text-xs text-foreground/60">
         <span>{formation.duree}</span>
-        <span className="font-medium text-navy group-hover:underline">
-          Voir le programme →
+        <span className="font-semibold text-navy">
+          À partir de {formatFCFA(formation.tarifIndividuel)}
         </span>
       </div>
+      <span className="mt-3 text-xs font-medium text-navy group-hover:underline">
+        Voir le programme →
+      </span>
     </Link>
   );
 }
