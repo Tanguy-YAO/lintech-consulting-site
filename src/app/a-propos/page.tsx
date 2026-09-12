@@ -27,8 +27,9 @@ export default function AProposPage() {
           Consulting.
         </p>
         <p>
-          Il dirige aujourd&apos;hui la <strong>BI/Data de deux filiales du
-          groupe EDF en Côte d&apos;Ivoire</strong>, TEVIA Énergie et Greeno,
+          Il occupe aujourd&apos;hui un poste de <strong>BI Manager au sein
+          d&apos;un grand groupe international de l&apos;énergie</strong>, où
+          il pilote la BI/Data de plusieurs entités en Côte d&apos;Ivoire,
           avec une spécialisation en Data Engineering et Analytics
           Engineering — la construction de pipelines de données fiables et de
           modèles analytiques prêts pour la décision, au-delà des simples
