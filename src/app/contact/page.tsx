@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import ContactForm from "./ContactForm";
+import {
+  CONTACT_EMAIL,
+  PHONE_DISPLAY,
+  WHATSAPP_DISPLAY,
+  WHATSAPP_LINK,
+} from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "Contact & Inscription — LinTech Consulting",
@@ -19,6 +25,29 @@ export default function ContactPage() {
         envie de vous inscrire ? Remplissez le formulaire ci-dessous, nous
         revenons vers vous rapidement.
       </p>
+
+      <div className="mt-8 flex flex-wrap gap-4">
+        <a
+          href={WHATSAPP_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+        >
+          WhatsApp — {WHATSAPP_DISPLAY}
+        </a>
+        <a
+          href={`tel:${PHONE_DISPLAY.replace(/\s/g, "")}`}
+          className="inline-flex items-center gap-2 rounded-full border border-black/15 px-5 py-2.5 text-sm font-semibold text-navy hover:bg-black/5"
+        >
+          Appeler — {PHONE_DISPLAY}
+        </a>
+        <a
+          href={`mailto:${CONTACT_EMAIL}`}
+          className="inline-flex items-center gap-2 rounded-full border border-black/15 px-5 py-2.5 text-sm font-semibold text-navy hover:bg-black/5"
+        >
+          {CONTACT_EMAIL}
+        </a>
+      </div>
 
       <div className="mt-10 rounded-2xl border border-black/10 bg-white p-6 shadow-sm md:p-8">
         <Suspense fallback={null}>

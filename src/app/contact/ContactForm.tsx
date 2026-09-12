@@ -3,8 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { formations } from "@/lib/formations";
-
-const CONTACT_EMAIL = "contact@lintechconsulting.com"; // TODO: remplacer par l'adresse email définitive
+import { CONTACT_EMAIL } from "@/lib/contact";
 
 export default function ContactForm() {
   const searchParams = useSearchParams();

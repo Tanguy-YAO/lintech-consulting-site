@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { poles } from "@/lib/formations";
+import {
+  CONTACT_EMAIL,
+  PHONE_DISPLAY,
+  WHATSAPP_DISPLAY,
+  WHATSAPP_LINK,
+} from "@/lib/contact";
 
 export default function Footer() {
   return (
@@ -64,6 +70,21 @@ export default function Footer() {
           </h3>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>Abidjan, Côte d&apos;Ivoire</li>
+            <li>
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                WhatsApp : {WHATSAPP_DISPLAY}
+              </a>
+            </li>
+            <li>
+              <a href={`tel:${PHONE_DISPLAY.replace(/\s/g, "")}`} className="hover:text-white">
+                {PHONE_DISPLAY}
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-white break-all">
+                {CONTACT_EMAIL}
+              </a>
+            </li>
             <li>
               <Link href="/contact" className="hover:text-white">
                 Formulaire de contact

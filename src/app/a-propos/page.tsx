@@ -20,21 +20,24 @@ export default function AProposPage() {
           Engineering &amp; Analytics Engineering.
         </p>
         <p>
-          Les formations sont animées par un <strong>BI Manager en activité</strong>,
-          avec une spécialisation en Data Engineering et Analytics Engineering
-          — la construction de pipelines de données fiables et de modèles
-          analytiques prêts pour la décision, au-delà des tableaux de bord.
-        </p>
-        <p className="rounded-xl border border-dashed border-black/20 bg-black/[.02] p-4 text-sm text-foreground/60">
-          [À compléter : parcours professionnel, années d&apos;expérience,
-          entreprises accompagnées, certifications (Power BI, dbt, etc.) et
-          photo — pour renforcer la crédibilité de cette page auprès des
-          visiteurs.]
+          Les formations sont animées par un <strong>formateur autodidacte</strong>,
+          entré dans la data par passion plutôt que par un parcours
+          académique classique — et c&apos;est cette même approche pratique,
+          orientée résultats, qui structure chaque formation LinTech
+          Consulting.
         </p>
         <p>
-          De nombreux professionnels sollicitent déjà LinTech Consulting de
-          manière informelle pour de l&apos;accompagnement en Excel, Power BI
-          et Data. Ce site formalise cette expertise en un catalogue de
+          Il dirige aujourd&apos;hui la <strong>BI/Data de deux filiales du
+          groupe EDF en Côte d&apos;Ivoire</strong>, TEVIA Énergie et Greeno,
+          avec une spécialisation en Data Engineering et Analytics
+          Engineering — la construction de pipelines de données fiables et de
+          modèles analytiques prêts pour la décision, au-delà des simples
+          tableaux de bord.
+        </p>
+        <p>
+          De nombreux professionnels le sollicitent déjà de manière
+          informelle pour de l&apos;accompagnement en Excel, Power BI et
+          Data. Ce site formalise cette expertise en un catalogue de
           formations structuré, pour les particuliers comme pour les
           entreprises.
         </p>
