@@ -21,17 +21,17 @@ const etapes = [
   {
     titre: "3. Stockage",
     description:
-      "Un socle de stockage ouvert et maîtrisé, avec MinIO pour les fichiers et PostgreSQL pour les données structurées.",
+      "Un socle de stockage ouvert et maîtrisé : par exemple MinIO pour les fichiers et PostgreSQL pour les données structurées, adapté à votre contexte.",
   },
   {
     titre: "4. Hébergement",
     description:
-      "Déploiement de l'infrastructure sur Railway, pour un environnement fiable et géré au quotidien.",
+      "Déploiement sur une infrastructure fiable et gérée au quotidien (par exemple Railway), ou sur votre infrastructure existante.",
   },
   {
     titre: "5. Restitution",
     description:
-      "Tableaux de bord et rapports avec Metabase ou Power BI, selon les outils déjà utilisés par vos équipes.",
+      "Tableaux de bord et rapports avec l'outil le plus adapté (Metabase, Power BI ou autre), selon les outils déjà utilisés par vos équipes.",
   },
   {
     titre: "6. Formation & transfert",
@@ -71,6 +71,12 @@ export default function ConseilBIPage() {
 
       <section className="mx-auto max-w-5xl px-6 py-16">
         <h2 className="text-2xl font-bold text-navy">Notre méthode</h2>
+        <p className="mt-2 max-w-2xl text-sm text-foreground/70">
+          Les outils mentionnés ci-dessous illustrent une architecture déjà
+          mise en œuvre avec succès. Le choix technique final dépend
+          toujours de votre contexte : outils déjà en place, contraintes de
+          coût, de sécurité ou d&apos;hébergement.
+        </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {etapes.map((e) => (
             <div key={e.titre} className="rounded-2xl border border-black/10 p-6">

@@ -49,7 +49,6 @@ export default function AProposPage() {
             <strong>Data Engineering et Analytics Engineering</strong> : la
             construction de pipelines de données fiables et de modèles
             analytiques prêts pour la décision, au-delà des tableaux de bord.
-            Il poursuit par ailleurs actuellement un MBA.
           </p>
           <p>
             En tant que gérant de LinTech Consulting, il sélectionne et
