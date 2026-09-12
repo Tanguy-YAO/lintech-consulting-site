@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Formations en entreprise — LinTech Consulting",
+  title: "Formations en entreprise | LinTech Consulting",
   description:
     "Formations sur-mesure en Data, BI et Analytics pour vos équipes : audit de compétences, programme adapté, formation intra-entreprise.",
 };

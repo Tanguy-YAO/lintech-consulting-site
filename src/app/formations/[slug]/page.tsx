@@ -16,7 +16,7 @@ export async function generateMetadata({
   const formation = getFormationBySlug(slug);
   if (!formation) return {};
   return {
-    title: `${formation.titre} — LinTech Consulting`,
+    title: `${formation.titre} | LinTech Consulting`,
     description: formation.accroche,
   };
 }

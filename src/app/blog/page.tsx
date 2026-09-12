@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog — LinTech Consulting",
+  title: "Blog | LinTech Consulting",
   description:
     "Articles et ressources gratuites sur Power BI, Excel, Data Analytics et Data Engineering.",
 };

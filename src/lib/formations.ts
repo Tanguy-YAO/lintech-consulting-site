@@ -62,7 +62,7 @@ export const formations: Formation[] = [
     accroche:
       "Concevez des pipelines de données robustes et des modèles analytiques fiables, du brut à la décision.",
     niveau: "Intermédiaire à avancé",
-    duree: "5 jours (35h) — format intensif ou étalé sur plusieurs semaines",
+    duree: "5 jours (35h), en format intensif ou étalé sur plusieurs semaines",
     format: "Présentiel (Abidjan) ou distanciel",
     publicCible: [
       "Analystes data qui veulent monter en compétence vers l'ingénierie de données",
@@ -118,7 +118,7 @@ export const formations: Formation[] = [
   {
     slug: "power-bi-fondamentaux",
     pole: "power-bi",
-    titre: "Power BI — Fondamentaux à la maîtrise des tableaux de bord",
+    titre: "Power BI : des fondamentaux à la maîtrise des tableaux de bord",
     accroche:
       "Créez des tableaux de bord professionnels, de l'import des données à la publication.",
     niveau: "Débutant à intermédiaire",
@@ -176,7 +176,7 @@ export const formations: Formation[] = [
   {
     slug: "power-bi-avance-dax",
     pole: "power-bi",
-    titre: "Power BI Avancé — Modélisation & DAX",
+    titre: "Power BI Avancé : Modélisation & DAX",
     accroche:
       "Maîtrisez le langage DAX et les modèles de données avancés pour des analyses fines.",
     niveau: "Avancé",
@@ -273,7 +273,7 @@ export const formations: Formation[] = [
   {
     slug: "excel-macros-vba",
     pole: "excel",
-    titre: "Excel Avancé — Macros & VBA",
+    titre: "Excel Avancé : Macros & VBA",
     accroche: "Automatisez vos tâches répétitives et gagnez un temps précieux.",
     niveau: "Avancé",
     duree: "2 jours (14h)",
@@ -364,7 +364,7 @@ export const formations: Formation[] = [
   {
     slug: "data-analytics-sql-python",
     pole: "data-analytics",
-    titre: "Data Analytics — SQL & Python",
+    titre: "Data Analytics : SQL & Python",
     accroche:
       "Analysez des données à l'échelle avec SQL et Python, et racontez des histoires avec la donnée.",
     niveau: "Débutant à intermédiaire",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "À propos — LinTech Consulting",
+  title: "À propos | LinTech Consulting",
   description:
     "LinTech Consulting, cabinet de formation en Data, BI et Analytics, dirigé par Tanguy Boris Romuald YAO et son réseau de formateurs professionnels.",
 };
@@ -21,9 +21,9 @@ export default function AProposPage() {
         </p>
         <p>
           Chaque formation est animée par un <strong>formateur professionnel
-          sélectionné pour son expertise</strong> sur le sujet concerné,
-          garantissant un contenu à jour et directement applicable — quelle
-          que soit la thématique.
+          sélectionné pour son expertise</strong> sur le sujet concerné, pour
+          garantir un contenu à jour et directement applicable, quelle que
+          soit la thématique.
         </p>
       </div>
 
@@ -36,20 +36,20 @@ export default function AProposPage() {
         </h2>
         <div className="mt-4 space-y-4 text-sm text-foreground/80">
           <p>
-            Arrivé à la donnée par un chemin peu classique — après un parcours
-            initial en linguistique, puis plusieurs années à diriger des
-            opérations terrain et service client à l&apos;échelle nationale
-            pour une entreprise panafricaine — Tanguy s&apos;est formé en
-            autodidacte à la Business Intelligence, par passion.
+            Tanguy est arrivé à la donnée par un chemin peu classique. Après
+            un parcours initial en linguistique, puis plusieurs années à
+            diriger des opérations terrain et service client à l&apos;échelle
+            nationale pour une entreprise panafricaine, il s&apos;est formé
+            en autodidacte à la Business Intelligence, par passion.
           </p>
           <p>
             Il occupe aujourd&apos;hui un poste de <strong>BI Manager au sein
             d&apos;un grand groupe international de l&apos;énergie</strong> en
             Côte d&apos;Ivoire, où il a également développé une expertise en{" "}
-            <strong>Data Engineering et Analytics Engineering</strong> —
-            au-delà des tableaux de bord, la construction de pipelines de
-            données fiables et de modèles analytiques prêts pour la décision.
-            Il est par ailleurs titulaire d&apos;un MBA.
+            <strong>Data Engineering et Analytics Engineering</strong> : la
+            construction de pipelines de données fiables et de modèles
+            analytiques prêts pour la décision, au-delà des tableaux de bord.
+            Il poursuit par ailleurs actuellement un MBA.
           </p>
           <p>
             En tant que gérant de LinTech Consulting, il sélectionne et

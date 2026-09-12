@@ -3,7 +3,7 @@ import { getFormationsByPole, poles } from "@/lib/formations";
 import CourseCard from "@/components/CourseCard";
 
 export const metadata: Metadata = {
-  title: "Catalogue de formations — LinTech Consulting",
+  title: "Catalogue de formations | LinTech Consulting",
   description:
     "Power BI, Excel, Google Sheets, Data Analytics, Data Engineering & Analytics Engineering : découvrez toutes nos formations.",
 };

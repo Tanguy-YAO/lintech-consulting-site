@@ -24,7 +24,7 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-lg text-white/80">
             LinTech Consulting forme particuliers et entreprises en Power BI,
             Excel, Google Sheets, Data Analytics et Data Engineering &amp;
-            Analytics Engineering — en Côte d&apos;Ivoire et en Afrique de
+            Analytics Engineering, en Côte d&apos;Ivoire et en Afrique de
             l&apos;Ouest.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -119,8 +119,8 @@ export default function Home() {
             Une question, un projet de formation ?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-white/90">
-            Discutons de vos objectifs et du format le plus adapté — individuel
-            ou pour toute votre équipe.
+            Discutons de vos objectifs pour trouver le format le plus
+            adapté, individuel ou pour toute votre équipe.
           </p>
           <Link
             href="/contact"

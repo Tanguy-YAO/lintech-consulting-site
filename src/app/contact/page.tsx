@@ -9,7 +9,7 @@ import {
 } from "@/lib/contact";
 
 export const metadata: Metadata = {
-  title: "Contact & Inscription — LinTech Consulting",
+  title: "Contact & Inscription | LinTech Consulting",
   description:
     "Contactez LinTech Consulting pour vous inscrire à une formation ou demander un devis pour votre entreprise.",
 };
@@ -33,13 +33,13 @@ export default function ContactPage() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
         >
-          WhatsApp — {WHATSAPP_DISPLAY}
+          WhatsApp : {WHATSAPP_DISPLAY}
         </a>
         <a
           href={`tel:${PHONE_DISPLAY.replace(/\s/g, "")}`}
           className="inline-flex items-center gap-2 rounded-full border border-black/15 px-5 py-2.5 text-sm font-semibold text-navy hover:bg-black/5"
         >
-          Appeler — {PHONE_DISPLAY}
+          Appeler : {PHONE_DISPLAY}
         </a>
         <a
           href={`mailto:${CONTACT_EMAIL}`}

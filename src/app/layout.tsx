@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LinTech Consulting — Formations Data, BI & Analytics",
+  title: "LinTech Consulting | Formations Data, BI & Analytics",
   description:
     "Formations en Power BI, Excel, Google Sheets, Data Analytics et Data Engineering. Un réseau de formateurs experts, pour particuliers et entreprises en Côte d'Ivoire et en Afrique de l'Ouest.",
 };

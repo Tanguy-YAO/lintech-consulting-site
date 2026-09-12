@@ -20,7 +20,7 @@ export default function ContactForm() {
     const formation = data.get("formation");
     const message = data.get("message");
 
-    const subject = `Demande de formation — ${formation || "Renseignement général"}`;
+    const subject = `Demande de formation : ${formation || "Renseignement général"}`;
     const body = [
       `Nom : ${nom}`,
       `Email : ${email}`,
